@@ -1,0 +1,63 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna's Website</title>
+  <style>
+    body {
+    margin-left: 300px;
+    margin-right: 300px;
+    font-family: monospace;
+    text-align: center;
+    background-color: #FEEEEC;
+  }
+
+  .quiz-box {
+    border: 2px solid #333;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    background-color: #F5C1D0
+  }
+
+ </style>
+</head>
+
+<body>
+    <h1>
+        ♡ To Anna ♡
+    </h1>
+    <p>
+        I hope you are able to access this website. In the time that I have known you, since we first met, you have been a great friend and individual, and it brings me great joy to be able to write this.
+    </p>
+    <br>
+    <p>Your personality is nothing short of amazing. Your kindness is present in every word you say, and even when you are joking, you always respect boundaries and they are never said with hatred. Despite you claiming not to be an empath, you are very considerate and compassionate, and have always asked if I wanted to talk when things have bothered me. Your sense of humour is distinct but not weird, it is hilarious and always in good taste. You are friendly and never make me feel alienated or talk dry, and every single second of conversation between us has been a joy for me. I hope you feel similarly :). It goes without saying, of course, that your beauty is stunning in every sense of the word. Though I try to keep my compliments as respectful as possible, there is no word in the English language, or any other language, that can fully quantify how pretty you are. You are a unique person in that there will never be another Anna and I am so glad that you are so unabashedly yourself, and that is why I am writing this to you.</p>
+    <br>
+    <p>A woman as amazing as you deserves to have a big deal made about her. It would be an insult to not court you first before pursuing something further with you. Even if you decline, or if you change your mind after saying yes, then everything will be okay. I respect you as a person and as a friend, and even if nothing occurs between us, I can say it is a pleasure to know you and to spend time with you whenever we do. When you click a button below, please do not feel as if you have to say yes. If you need more time, or do not wish to be courted, I will respect that. However, if you do say yes, I promise that I will take the time to develop our bond and learn about you and how to be the best possible person for you before we make anything official, and the time I will take to court you will not be wasted. I will always respect you as I respect you now and treat you with the care that you deserve. It would be an honour to show this through action and not just words, so this leads me to my big question.</p>
+    <br>
+    <div class="quiz-box">
+    <p>Anna, may I have the honour of courting you?</p>
+    <input type = "radio" name = "answer" id = "yes" value = "Yes" onclick = "displayMessage('Yes')">
+    <label for = "yes"> Yes! </label>
+    <input type = "radio" name = "answer" id = "no" value = "No" onclick = "displayMessage('No')">
+    <label for = "no"> No! </label>
+    
+    <p id="message"></p>
+</div>
+      
+    <script>
+      function displayMessage(answer) {
+        const messageBox = document.getElementById('message');
+        messageBox.textContent = answer === 'Yes' ? 'YIPPEE!!' : 'That is okay! I respect your choice!';
+    }
+
+    </script>
+</body>
+
+</html>
